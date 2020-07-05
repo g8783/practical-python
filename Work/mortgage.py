@@ -28,7 +28,7 @@ while principal > 0:
              
     principal = principal * (1+rate/12) - monthly_payment
     total_paid = total_paid + monthly_payment
-    print(i_month, round(total_paid, 2), round(principal, 2))
+    print(f' Month {i_month:>3d} Total ${total_paid:>10.2f} Principal ${principal:>10.2f}')
 
-print('Total paid', round(total_paid, 2))
+print(f'Total paid, ${round(total_paid, 2):0.2f}')
 print('Months', i_month)
